@@ -5,6 +5,7 @@ interface PokemonProps {
 	};
 }
 
+
 function PokemonCard({ pokemon }: PokemonProps) {
 	return (
 		<figure>

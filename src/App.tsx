@@ -3,8 +3,6 @@ import PokemonCard from "./components/PokemonCard";
 import { useState } from "react";
 
 
-
-
 function App() {
 
   const [pokemonIndex, setPokemonIndex] = useState(0);
@@ -36,7 +34,6 @@ function App() {
   ];
 
 
-
   const handleClickNext = () => {
     setPokemonIndex(pokemonIndex + 1);
   };
@@ -58,7 +55,6 @@ function App() {
       
 		</div>
 	);
-
 }
 
 export default App;
