@@ -2,9 +2,6 @@ import "./App.css";
 import PokemonCard from "./components/PokemonCard";
 
 
-
-
-
 function App() {
 
   const pokemonList = [
@@ -21,17 +18,9 @@ function App() {
   
 
   return (
-    <div>{
-      pokemonList.map((pokemon) => {
-        return (
-          <PokemonCard 
-            name={pokemon.name}
-            imgSrc={pokemon.imgSrc}
-          />
-        )
-      })
-      }
-    
+    <div>
+      <PokemonCard pokemon={pokemonList[0]}/>
+
     </div>
   );
 }
