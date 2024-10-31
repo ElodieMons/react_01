@@ -1,6 +1,6 @@
 import "./App.css";
-import Navig from "./components/Navig";
 import PokemonCard from "./components/PokemonCard";
+import NavBar from "./components/NavBar";
 import { useState } from "react";
 
 
@@ -39,7 +39,10 @@ function App() {
   return (
 		<div>
 			<PokemonCard pokemon={pokemonList[pokemonIndex]} />
-      <Navig />
+      <NavBar 
+        pokemonIndex={pokemonIndex}
+				setPokemonIndex={setPokemonIndex}
+				pokemonList={pokemonList}/>
 		</div>
 	);
 }
