@@ -1,4 +1,5 @@
 import "./App.css";
+import Navig from "./components/Navig";
 import PokemonCard from "./components/PokemonCard";
 import { useState } from "react";
 
@@ -26,7 +27,7 @@ function App() {
     {
       name: "pikachu",
       imgSrc:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/otherofficial-artwork/25.png",
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
     },
     {
       name: "mew",
@@ -36,11 +37,9 @@ function App() {
 
 
   return (
-		<div className="container">
+		<div>
 			<PokemonCard pokemon={pokemonList[pokemonIndex]} />
-
-      
-      
+      <Navig />
 		</div>
 	);
 }
