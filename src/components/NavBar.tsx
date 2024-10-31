@@ -18,7 +18,7 @@ function NavBar({ pokemonIndex, setPokemonIndex, pokemonList }: NavBarProps) {
 		setPokemonIndex(pokemonIndex - 1);
 	};
 	return (
-		<div>
+		<nav>
 
 			{pokemonIndex > 0 ? (
 				<button type="button" onClick={handleClickPrevious}>Précédent</button>
@@ -27,7 +27,8 @@ function NavBar({ pokemonIndex, setPokemonIndex, pokemonList }: NavBarProps) {
 			{pokemonIndex < pokemonList.length - 1 ? (
 				<button type="button" onClick={handleClickNext}>Suivant</button>
 				) : null}
-		</div>
+
+		</nav>
 	);
 }
 
